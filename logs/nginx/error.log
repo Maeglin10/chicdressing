@@ -1,0 +1,1 @@
+2024/03/25 09:47:15 [error] 1176#0: *6528 directory index of "/Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/cache/" is forbidden, client: 127.0.0.1, server: , request: "GET /wp-content/cache/ HTTP/1.0", host: "chicdressing.local"

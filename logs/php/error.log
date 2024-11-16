@@ -1,0 +1,480 @@
+[18-Mar-2024 16:09:07 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: L’évènement planifié n’existe pas., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[18-Mar-2024 16:09:11 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(643): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(103): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[18-Mar-2024 16:09:21 UTC] Cron reschedule event error for hook: woocommerce_geoip_updater, Error code: invalid_schedule, Error message: L’évènement planifié n’existe pas., Data: {"schedule":"fifteendays","args":[],"interval":1296000}
+[20-Mar-2024 20:32:04 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(643): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(103): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[20-Mar-2024 20:59:31 UTC] WordPress database error Duplicate column name 'priority' for query ALTER TABLE wp_actionscheduler_actions ADD COLUMN priority tinyint unsigned NOT NULL default '10' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_DBStore->init, ActionScheduler_Abstract_Schema->register_tables, ActionScheduler_Abstract_Schema->update_table, dbDelta
+[20-Mar-2024 20:59:31 UTC] WordPress database error Duplicate key name 'hook_status_scheduled_date_gmt' for query ALTER TABLE wp_actionscheduler_actions ADD KEY `hook_status_scheduled_date_gmt` (`hook`(163),`status`,`scheduled_date_gmt`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_DBStore->init, ActionScheduler_Abstract_Schema->register_tables, ActionScheduler_Abstract_Schema->update_table, dbDelta
+[20-Mar-2024 20:59:31 UTC] WordPress database error Duplicate key name 'status_scheduled_date_gmt' for query ALTER TABLE wp_actionscheduler_actions ADD KEY `status_scheduled_date_gmt` (`status`,`scheduled_date_gmt`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_DBStore->init, ActionScheduler_Abstract_Schema->register_tables, ActionScheduler_Abstract_Schema->update_table, dbDelta
+[20-Mar-2024 20:59:32 UTC] WordPress database error Table 'wp_wc_product_download_directories' already exists for query 
+CREATE TABLE wp_wc_product_download_directories (
+	url_id bigint(20) unsigned NOT NULL auto_increment,
+	url varchar(256) NOT NULL,
+	enabled tinyint(1) NOT NULL DEFAULT 0,
+	PRIMARY KEY (url_id),
+	KEY url (url(191))
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::check_version, WC_Install::install, WC_Install::create_tables, dbDelta
+[20-Mar-2024 20:59:32 UTC] WordPress database error Table 'wp_wc_orders' already exists for query 
+
+CREATE TABLE wp_wc_orders (
+	id bigint(20) unsigned,
+	status varchar(20) null,
+	currency varchar(10) null,
+	type varchar(20) null,
+	tax_amount decimal(26,8) null,
+	total_amount decimal(26,8) null,
+	customer_id bigint(20) unsigned null,
+	billing_email varchar(320) null,
+	date_created_gmt datetime null,
+	date_updated_gmt datetime null,
+	parent_order_id bigint(20) unsigned null,
+	payment_method varchar(100) null,
+	payment_method_title text null,
+	transaction_id varchar(100) null,
+	ip_address varchar(100) null,
+	user_agent text null,
+	customer_note text null,
+	PRIMARY KEY (id),
+	KEY status (status),
+	KEY date_created (date_created_gmt),
+	KEY customer_id_billing_email (customer_id, billing_email(171)),
+	KEY billing_email (billing_email(191)),
+	KEY type_status_date (type, status, date_created_gmt),
+	KEY parent_order_id (parent_order_id),
+	KEY date_updated (date_updated_gmt)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::check_version, WC_Install::install, WC_Install::create_tables, dbDelta
+[20-Mar-2024 20:59:32 UTC] WordPress database error Table 'wp_wc_order_addresses' already exists for query 
+CREATE TABLE wp_wc_order_addresses (
+	id bigint(20) unsigned auto_increment primary key,
+	order_id bigint(20) unsigned NOT NULL,
+	address_type varchar(20) null,
+	first_name text null,
+	last_name text null,
+	company text null,
+	address_1 text null,
+	address_2 text null,
+	city text null,
+	state text null,
+	postcode text null,
+	country text null,
+	email varchar(320) null,
+	phone varchar(100) null,
+	KEY order_id (order_id),
+	UNIQUE KEY address_type_order_id (address_type, order_id),
+	KEY email (email(191)),
+	KEY phone (phone)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::check_version, WC_Install::install, WC_Install::create_tables, dbDelta
+[20-Mar-2024 20:59:32 UTC] WordPress database error Table 'wp_wc_order_operational_data' already exists for query 
+CREATE TABLE wp_wc_order_operational_data (
+	id bigint(20) unsigned auto_increment primary key,
+	order_id bigint(20) unsigned NULL,
+	created_via varchar(100) NULL,
+	woocommerce_version varchar(20) NULL,
+	prices_include_tax tinyint(1) NULL,
+	coupon_usages_are_counted tinyint(1) NULL,
+	download_permission_granted tinyint(1) NULL,
+	cart_hash varchar(100) NULL,
+	new_order_email_sent tinyint(1) NULL,
+	order_key varchar(100) NULL,
+	order_stock_reduced tinyint(1) NULL,
+	date_paid_gmt datetime NULL,
+	date_completed_gmt datetime NULL,
+	shipping_tax_amount decimal(26,8) NULL,
+	shipping_total_amount decimal(26,8) NULL,
+	discount_tax_amount decimal(26,8) NULL,
+	discount_total_amount decimal(26,8) NULL,
+	recorded_sales tinyint(1) NULL,
+	UNIQUE KEY order_id (order_id),
+	KEY order_key (order_key)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::check_version, WC_Install::install, WC_Install::create_tables, dbDelta
+[20-Mar-2024 20:59:32 UTC] WordPress database error Table 'wp_wc_orders_meta' already exists for query 
+CREATE TABLE wp_wc_orders_meta (
+	id bigint(20) unsigned auto_increment primary key,
+	order_id bigint(20) unsigned null,
+	meta_key varchar(255),
+	meta_value text null,
+	KEY meta_key_value (meta_key(100), meta_value(82)),
+	KEY order_id_meta_key_meta_value (order_id, meta_key(100), meta_value(82))
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::check_version, WC_Install::install, WC_Install::create_tables, dbDelta
+[20-Mar-2024 20:59:32 UTC] WordPress database error Duplicate column name 'date_paid' for query ALTER TABLE wp_wc_order_stats ADD COLUMN date_paid datetime DEFAULT '0000-00-00 00:00:00' made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::check_version, WC_Install::install, WC_Install::create_tables, dbDelta
+[20-Mar-2024 20:59:32 UTC] WordPress database error Duplicate column name 'date_completed' for query ALTER TABLE wp_wc_order_stats ADD COLUMN date_completed datetime DEFAULT '0000-00-00 00:00:00' made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::check_version, WC_Install::install, WC_Install::create_tables, dbDelta
+[25-Mar-2024 14:26:05 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(643): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(103): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[29-Mar-2024 18:51:28 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-admin/includes/update.php on line 154
+[29-Mar-2024 18:56:40 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(643): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(105): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[30-Mar-2024 19:42:33 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(643): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(105): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[30-Mar-2024 19:43:23 UTC] PHP Deprecated:  The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-requests.php on line 24
+[07-Apr-2024 17:17:30 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(643): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(105): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[08-Apr-2024 16:04:36 UTC] PHP Deprecated:  The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-requests.php on line 24
+[08-Apr-2024 16:40:41 UTC] PHP Deprecated:  The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-requests.php on line 24
+[08-Apr-2024 16:43:54 UTC] PHP Deprecated:  The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-requests.php on line 24
+[10-Apr-2024 20:08:45 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(643): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(105): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[12-Apr-2024 20:33:13 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(643): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(105): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[12-Apr-2024 21:36:42 UTC] PHP Fatal error:  Cannot redeclare wp_deregister_script() (previously declared in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/functions.wp-scripts.php:278) in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/themes/chicdressing/functions.php on line 66
+[12-Apr-2024 21:36:42 UTC] PHP Fatal error:  Cannot redeclare wp_deregister_script() (previously declared in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/functions.wp-scripts.php:278) in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/themes/chicdressing/functions.php on line 66
+[12-Apr-2024 21:36:42 UTC] PHP Fatal error:  Cannot redeclare wp_deregister_script() (previously declared in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/functions.wp-scripts.php:278) in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/themes/chicdressing/functions.php on line 66
+[12-Apr-2024 21:37:14 UTC] PHP Fatal error:  Cannot redeclare wp_deregister_script() (previously declared in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/functions.wp-scripts.php:278) in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/themes/chicdressing/functions.php on line 66
+[12-Apr-2024 21:37:14 UTC] PHP Fatal error:  Cannot redeclare wp_deregister_script() (previously declared in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/functions.wp-scripts.php:278) in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/themes/chicdressing/functions.php on line 66
+[12-Apr-2024 21:37:26 UTC] PHP Fatal error:  Cannot redeclare wp_deregister_script() (previously declared in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/functions.wp-scripts.php:278) in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/themes/chicdressing/functions.php on line 62
+[12-Apr-2024 21:37:26 UTC] PHP Fatal error:  Cannot redeclare wp_deregister_script() (previously declared in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/functions.wp-scripts.php:278) in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/themes/chicdressing/functions.php on line 62
+[12-Apr-2024 21:37:27 UTC] PHP Fatal error:  Cannot redeclare wp_deregister_script() (previously declared in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/functions.wp-scripts.php:278) in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/themes/chicdressing/functions.php on line 62
+[12-Apr-2024 21:37:27 UTC] PHP Fatal error:  Cannot redeclare wp_deregister_script() (previously declared in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/functions.wp-scripts.php:278) in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/themes/chicdressing/functions.php on line 62
+[13-Apr-2024 20:33:52 UTC] PHP Parse error:  syntax error, unexpected token "/", expecting ")" in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/themes/chicdressing/functions.php on line 10
+[13-Apr-2024 20:33:53 UTC] PHP Parse error:  syntax error, unexpected token "/", expecting ")" in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/themes/chicdressing/functions.php on line 10
+[13-Apr-2024 20:34:45 UTC] PHP Parse error:  syntax error, unexpected token "/", expecting variable in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/themes/chicdressing/functions.php on line 10
+[13-Apr-2024 22:46:48 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(643): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(105): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[15-Apr-2024 12:11:38 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(643): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(105): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[15-Apr-2024 15:20:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ashe_kalam_font_url() in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/themes/ashe/functions.php:282
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): ashe_gfonts_scripts('')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/script-loader.php(2265): do_action('wp_enqueue_scri...')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): wp_enqueue_scripts('')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/general-template.php(3050): do_action('wp_head')
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/themes/ashe/header.php(8): wp_head()
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/template.php(810): require_once('/Users/milliand...')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/template.php(745): load_template('/Users/milliand...', true, Array)
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/themes/chicdressing/index.php(3): get_header()
+#13 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/template-loader.php(106): include('/Users/milliand...')
+#14 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-blog-header.php(19): require_once('/Users/milliand...')
+#15 /Users/milliandvalentin/Local Sites/chicdressing/app/public/index.php(17): require('/Users/milliand...')
+#16 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/themes/ashe/functions.php on line 282
+[20-Apr-2024 19:52:53 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(695): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(105): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[22-Apr-2024 03:51:45 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(695): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(105): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[23-Apr-2024 14:58:01 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(695): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(105): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[26-Apr-2024 17:04:24 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(695): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(105): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[27-Apr-2024 18:00:47 UTC] PHP Warning:  Une erreur imprévue s’est produite. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/update.php on line 211
+[27-Apr-2024 18:00:47 UTC] PHP Warning:  Une erreur imprévue s’est produite. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/update.php on line 449
+[27-Apr-2024 18:00:47 UTC] PHP Warning:  Une erreur imprévue s’est produite. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/update.php on line 730
+[27-Apr-2024 21:10:59 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(695): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(105): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[27-Apr-2024 23:17:45 UTC] WordPress database error Duplicate key name 'zone_id' for query ALTER TABLE wp_woocommerce_shipping_zone_locations ADD KEY `zone_id` (`zone_id`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::check_version, WC_Install::install, WC_Install::create_tables, dbDelta
+[29-Apr-2024 16:21:19 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(695): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(105): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[29-Apr-2024 17:50:41 UTC] PHP Warning:  Undefined array key "id_form" in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/views/front/widget_nl.php on line 125
+[13-May-2024 14:16:28 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(695): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(105): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[13-May-2024 14:16:34 UTC] WordPress database error Server shutdown in progress for query SELECT wp_users.ID
+				 FROM wp_users INNER JOIN wp_usermeta ON ( wp_users.ID = wp_usermeta.user_id )
+				 WHERE 1=1 AND ( 
+  ( 
+    ( wp_usermeta.meta_key = 'wp_capabilities' AND wp_usermeta.meta_value LIKE '%\"administrator\"%' )
+  )
+)
+				 ORDER BY user_login ASC
+				  made by include('phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php'), include('phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php'), WP_CLI\bootstrap, WP_CLI\Bootstrap\LaunchRunner->process, WP_CLI\Runner->start, WP_CLI\Runner->run_command_and_exit, WP_CLI\Runner->run_command, WP_CLI\Dispatcher\Subcommand->invoke, call_user_func, WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure}, call_user_func, User_Command->list_, get_users, WP_User_Query->__construct, WP_User_Query->query
+[13-May-2024 14:16:34 UTC] WordPress database error Server shutdown in progress for query SELECT wp_users.ID
+				 FROM wp_users INNER JOIN wp_usermeta ON ( wp_users.ID = wp_usermeta.user_id )
+				 WHERE 1=1 AND ( 
+  ( 
+    ( wp_usermeta.meta_key = 'wp_capabilities' AND wp_usermeta.meta_value LIKE '%\"administrator\"%' )
+  )
+)
+				 ORDER BY user_login ASC
+				  made by include('phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php'), include('phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php'), WP_CLI\bootstrap, WP_CLI\Bootstrap\LaunchRunner->process, WP_CLI\Runner->start, WP_CLI\Runner->run_command_and_exit, WP_CLI\Runner->run_command, WP_CLI\Dispatcher\Subcommand->invoke, call_user_func, WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure}, call_user_func, User_Command->list_, get_users, WP_User_Query->__construct, WP_User_Query->query
+[18-Sep-2024 21:23:57 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(695): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(105): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[01-Nov-2024 16:20:37 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-settings.php(695): do_action('init')
+#10 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-config.php(105): require_once('/Users/milliand...')
+#11 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-load.php(50): require_once('/Users/milliand...')
+#12 /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-cron.php(46): require_once('/Users/milliand...')
+#13 {main}
+  thrown in /Users/milliandvalentin/Local Sites/chicdressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
